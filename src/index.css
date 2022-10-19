@@ -1,0 +1,85 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px; 
+  background: rgb(233, 241, 252);
+  
+}
+
+.open-modal-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: #fff;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px;
+  transition: all 200ms ease;
+}
+
+.open-modal-btn:active{
+  box-shadow: 1px 1px 2px;
+}
+
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+ }
+ .overlay.animaited{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease;
+ }
+
+ .overlay.show{
+  opacity: 1;
+  visibility: visible;
+  transition: all 500ms ease;
+ }
+
+ .modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 45px 40px;
+  background-color: #fff;
+}
+
+
+.delete-icon{
+  font-size: 30px;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: grey;
+  cursor: pointer;
+}
+.delete-icon:hover{
+  color: black;
+}
+.modal img:hover{
+  transform: scale(1.01);
+  transition: transform 200ms ease;
+}
+
+.modal .hide{
+  display: none;
+}
+.moda .show{
+  display: block;
+}
